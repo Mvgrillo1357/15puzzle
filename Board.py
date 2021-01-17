@@ -112,14 +112,14 @@ class Board:
         if fringe.empty():
           return[]
         
-        #insepct current node
+        #inspect current node
         node= fringe.get()
 
         #quit if node contains goal
         if node["board"]==self.goal:
           return node["path"]
 
-        #add current node to searched set: put children in frigne
+        #add current node to searched set: put children in fringe
         if str(node["board"]) not in searched:
           searched.add(str(node["board"]))
           for child in successors(node["board"], node["empty_location"]):
