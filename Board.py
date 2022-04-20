@@ -5,7 +5,7 @@ from random import randint, seed
 
 MAX_COL=4
 MAX_ROW=4
-SHUFFLE_MAGNITUDE= 30
+SHUFFLE_MAGNITUDE= 50
 
 class Board:
     def __init__(self):
